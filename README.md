@@ -1,34 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# technical-test-arezzo
 
-## Getting Started
+## 🔥 O desafio
 
-First, run the development server:
+O objetivo desse desafio é criar uma pequena lojinha de [NFTs](https://www.google.com/search?q=O+que+%C3%A9+um+NFT%3F) onde teremos uma listagem dos NFTs disponíveis para compra e a possibilidade de adicioná-los a uma carteira.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### ➡️ Requisitos do software:
+- Ao acessar a home da aplicação o usuário deve ver uma listagem dos NFTs disponíveis para compra.
+- O usuário pode adicionar um ou mais NFTs a sua carteira. 
+- Um NFT não pode ser adicionado mais de uma vez a carteira do usuário.
+- Na listagem, cada NFT deve apresentar uma imagem, a coleção a qual ele pertence, o seu ID e o seu preço.
+- No topo de todas as telas deve ser apresentado um Header. 
+- O Header deve apresentar o Logo da loja e um link de acesso a carteira com um contador da quantidade de itens presentes nela.
+- Ao clicar no logo da loja o usuário deve ser redirecionado para a Home. 
+- Ao clicar na carteira o usuário deve ser redirecionado para a sua carteira.
+- Quando a quantidade de itens na carteira do usuário for atualizada o contador no header deve ser atualizado também.
+- Ao acessar a sua carteira o usuário deve visualizar os NFTs adicionados a ela.
+- Na listagem de NFTs da carteira, cada NFT deve apresentar uma imagem, a coleção a qual ele pertence, seu ID, preço e um botão para removê-lo da carteira. 
+- Ao pressionar o botão de remover o NFT da carteira o NFT deve ser removido e a listagem atualizada.
+- A carteira deve também apresentar um resumo dos NFTs que estão sendo comprados.
+- O resumo deve apresentar ID, preço em Ether e em Reais de cada NFT. Essa conversão pode ser feita levando em conta o [preço de um Ether](https://www.google.com/search?q=Ethereum+to+Real) no momento do desenvolvimento do desafio.
+- O resumo deve apresentar o valor total, em Ether e Reais, da soma de todos os NFTs presentes na carteira.
+- Ao recarregar qualquer página os itens presentes na carteira do usuário devem ser persistidos.
