@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #191920;
+  --card-background: #FFFFFF;
+  --disabled-button: #8C8C8F;
+}
+
+body, button {
+  font: 400 1rem "Roboto", sans-serif;
+}
+
+body {
+  background: var(--background);
+}
+
+button {
+  cursor: pointer;
+}

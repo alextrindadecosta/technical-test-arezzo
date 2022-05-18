@@ -1,0 +1,21 @@
+.header {
+  width: 100%;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 101px;
+    height: 48px;
+
+    cursor: pointer;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 1024px;
+}

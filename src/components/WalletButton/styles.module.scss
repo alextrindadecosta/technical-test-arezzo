@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 146px;
+  height: 33px;
+  cursor: pointer;
+
+  img {
+    width: 33px;
+    height: 33px;
+  }
+
+}
+
+.labels {
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto, sans-serif;
+  color: #FFFFFF;
+
+  .title {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .countItems {
+    display: flex;
+    align-self: flex-end;
+  }
+}
