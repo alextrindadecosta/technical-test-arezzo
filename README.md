@@ -4,6 +4,12 @@
 
 O objetivo desse desafio é criar uma pequena lojinha de [NFTs](https://www.google.com/search?q=O+que+%C3%A9+um+NFT%3F) onde teremos uma listagem dos NFTs disponíveis para compra e a possibilidade de adicioná-los a uma carteira.
 
+### ⚙ Rodando a aplicação:
+- Clone o projeto na sua máquina.
+- Instale as dependências do projeto (npm install)
+- Após instaladas as dependências, rode o frontend com o comando 'npm run dev'
+- Rode o JSON Server com o comando 'npm run server'
+
 ### ➡️ Requisitos do software:
 - Ao acessar a home da aplicação o usuário deve ver uma listagem dos NFTs disponíveis para compra.
 - O usuário pode adicionar um ou mais NFTs a sua carteira. 
@@ -21,3 +27,4 @@ O objetivo desse desafio é criar uma pequena lojinha de [NFTs](https://www.goog
 - O resumo deve apresentar ID, preço em Ether e em Reais de cada NFT. Essa conversão pode ser feita levando em conta o [preço de um Ether](https://www.google.com/search?q=Ethereum+to+Real) no momento do desenvolvimento do desafio.
 - O resumo deve apresentar o valor total, em Ether e Reais, da soma de todos os NFTs presentes na carteira.
 - Ao recarregar qualquer página os itens presentes na carteira do usuário devem ser persistidos.
+
