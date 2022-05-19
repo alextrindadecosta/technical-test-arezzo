@@ -64,3 +64,125 @@
   font-size: 16px;
   width: 48px;
 }
+
+
+@media (max-width: 1250px) {
+  .container {
+    width: 300px;
+    height: 408px;
+  }
+
+  .nftImage {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .container {
+    width: 250px;
+    height: 340px;
+  }
+
+  .nftImage {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (min-width: 1050px) and (max-width: 1150px) {
+  .nftInfoContainer {
+    width: 215px;
+  }
+
+  .nftInfo {
+    width: 80%;
+  }
+
+  .nftName {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .nftEtherPrice {
+    width: 35px;
+
+    >img {
+      margin-right: 4px;
+    }
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1049px) {
+  .nftInfoContainer {
+    width: 95%;
+    height: 35px;
+  }
+
+  .nftInfo {
+    width: 80%;
+  }
+
+  .nftName {
+    font-size: 14px !important;
+    width: 100%;
+  }
+
+  .nftEtherPrice {
+    width: 100%;
+    font-size: 14px;
+    justify-content: flex-end;
+    >img {
+      margin-right: 4px;
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .container {
+    width: 200px;
+    height: auto;
+  }
+
+  .nftImage {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 300px;
+    height: 408px;
+  }
+
+  .nftImage {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 900px) {
+  .nftInfoContainer {
+    width: 95%;
+    height: 35px;
+  }
+
+  .nftInfo {
+    width: 80%;
+  }
+
+  .nftName {
+    font-size: 14px !important;
+    width: 100%;
+  }
+
+  .nftEtherPrice {
+    width: 100%;
+    font-size: 14px;
+    justify-content: flex-end;
+    >img {
+      margin-right: 4px;
+    }
+  }
+}

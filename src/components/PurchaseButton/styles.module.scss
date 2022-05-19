@@ -24,3 +24,19 @@
     background-color: var(--disabled-button);
   }
 }
+
+@media (min-width: 1050px) and (max-width: 1150px) {
+  .button {
+    width: 90%;
+    height: 25px;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1050px) {
+  .button {
+    width: 90%;
+    height: 25px;
+    margin-bottom: 15px;
+  }
+}

@@ -4,7 +4,8 @@
   justify-content: center;
   align-content: center;
   width: 388px;
-  height: 192px;
+  min-height: 192px;
+  height: max-content;
   border-radius: 20px;
   padding-left: 28px;
   padding-right: 28px;
@@ -36,6 +37,7 @@
   h2 {
     font-size: 20px;
     font-weight: 500;
+    margin-top: 10px;
     width: 100px;
   }
 }
@@ -60,4 +62,18 @@
   display: flex;
   justify-content: flex-end;
   width: 100px;
+}
+
+@media (max-width: 630px) {
+  .container {
+    width: 400px;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    width: 350px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
