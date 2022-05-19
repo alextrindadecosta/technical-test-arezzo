@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 435px;
+  border-radius: 20px;
+  align-items: center;
+  font-family: Roboto, sans-serif;
+  margin-bottom: 30px;
+  background-color: var(--card-background);
+}
+
+.nftImage {
+  width: 320px;
+  height: 320px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+}
+
+.nftInfoContainer {
+  display: flex;
+  width: 290px;
+  height: 30px;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.nftInfo {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-items: space-between;
+  align-items: space-between;
+
+  .nftName {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    max-width: 223px;
+    height: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+.nftId {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.nftEtherPrice {
+  display: flex;
+  justify-content: space-between;
+  height: 16px;
+  font-size: 16px;
+  width: 48px;
+}

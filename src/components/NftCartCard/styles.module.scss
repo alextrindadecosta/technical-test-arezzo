@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  background-color: var(--card-background);
+  justify-content: space-between;
+  width: 575px;
+  height: 156px;
+  border-radius: 20px;
+  align-items: center;
+  margin-bottom: 30px;
+
+  > img {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    margin-left: 28px;
+    border-radius: 5px;
+  }
+}
+
+.nftInfo {
+  display: flex;
+  height: 92px;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.nftEtherPrice, .nftInfoLabels {
+  display: flex;
+}
+
+.nftInfoLabels {
+  flex-direction: column;
+
+  .nftName {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .nftId {
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
+
+.nftEtherPrice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 18px;
+  font-size: 18px;
+  font-weight: 400;
+  width: 52.21px;
+
+  > img {
+    margin-right: 10px;
+  }
+}
+
+.nftRemove {
+  display: flex;
+  height: 100px;
+  width: 25px;
+  margin-right: 28px;
+  cursor: pointer;
+
+  > img {
+    width: 25px;
+    height: 25px;
+  }
+}

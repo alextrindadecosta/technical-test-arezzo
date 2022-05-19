@@ -9,7 +9,7 @@ export function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.content}>
-        <img onClick={() => router.push('/')} src="/images/logo.svg" alt="logo da crypto store" />
+        <img className={styles.logo} onClick={() => router.push('/')} src="/images/logo.svg" alt="logo da crypto store" />
         <WalletButton />
       </div>
     </header>

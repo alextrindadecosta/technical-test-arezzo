@@ -1,13 +1,19 @@
-import type { AppProps } from 'next/app'
 import { Header } from '../components/Header'
+import { AppProps } from 'next/app'
+import { CartProvider } from '../hooks/useCart'
+import { ToastContainer } from 'react-toastify'
 
 import '../styles/global.scss'
+import 'react-toastify/dist/ReactToastify.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Header />
-      <Component {...pageProps} />
+      <CartProvider>
+        <Header />
+        <Component {...pageProps} />
+        <ToastContainer theme='dark' autoClose={3000}/>
+      </CartProvider>
     </>
   )
 }

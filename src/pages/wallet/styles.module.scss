@@ -6,9 +6,14 @@
 }
 
 .nftsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.walletContainer {
+  display: flex;
   width: 1023px;
   margin-top: 31px;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
