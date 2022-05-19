@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <CartProvider>
         <Header />
         <Component {...pageProps} />
-        <ToastContainer theme='dark' autoClose={3000}/>
+        <ToastContainer theme='dark' autoClose={3000} position='bottom-right'/>
       </CartProvider>
     </>
   )
