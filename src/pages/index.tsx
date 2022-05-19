@@ -2,9 +2,9 @@ import Head from 'next/head'
 import { api } from '../services/api';
 import { useCart } from '../hooks/useCart';
 import { NftProps } from '../types'
+import { useEffect } from 'react'
 import { NftStoreCard } from '../components/NftStoreCard'
 import { GetServerSideProps } from 'next'
-import { useEffect, useState } from 'react'
 
 import styles from './home.module.scss'
 
@@ -13,12 +13,9 @@ interface HomeProps {
 }
 
 export default function Home({ nfts }: HomeProps) {
-  const [nftsCatalog, setNftsCatalog] = useState<NftProps[]>([])
   const { setCart } = useCart()
 
   useEffect(() => {
-    setNftsCatalog(nfts)
-
     const storagedCart = localStorage.getItem('@CryptoStore:cart');
 
     if (storagedCart) {
@@ -34,7 +31,7 @@ export default function Home({ nfts }: HomeProps) {
       </Head>
       <div className={styles.container}>
         <div className={styles.nftsContainer}>
-          {nftsCatalog.map(nft => <NftStoreCard key={nft.id} nft={nft} />)}
+          {nfts.map(nft => <NftStoreCard key={nft.id} nft={nft} />)}
         </div>
       </div>
     </>

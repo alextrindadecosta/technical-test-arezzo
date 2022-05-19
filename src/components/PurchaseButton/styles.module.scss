@@ -3,16 +3,24 @@
   width: 290px;
   height: 40px;
   border-radius: 20px;
-  background-color: var(--background);
+  background-color: var(--enabled-button);
   color: #FFFFFF;
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 12px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  &:hover {
+    background-color: var(--button-enabled-hover);
+  }
 }
 
 .disabled-true {
   background-color: var(--disabled-button);
   border: 1px solid var(--disabled-button);
   cursor: not-allowed;
+
+  &:hover {
+    background-color: var(--disabled-button);
+  }
 }
